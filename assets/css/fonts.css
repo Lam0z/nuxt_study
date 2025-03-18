@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "FarAwayGalaxy";
+    src: url("~/assets/fonts/MR.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

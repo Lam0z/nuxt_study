@@ -1,11 +1,31 @@
+<script setup>
+const isActive = ref(true);
+const hasError = ref(false);
+const classObject = ref({
+    active: true,
+    "text-danger": false,
+});
+const color = ref("orange");
+</script>
 <template>
     <div>
-        <h1>Main page</h1>
-        <h6>main page content</h6>
+        <h1 class="alert alert-success" :class="{ 'text-success': isActive }">
+            Main page
+        </h1>
+        <h6
+            class="text"
+            :class="classObject"
+            @click="classObject['text-danger'] = !classObject['text-danger']"
+        >
+            main page content
+        </h6>
         <img src="~/assets/img/wolf.jpg" alt="wolf" />
     </div>
 </template>
 
-<script setup></script>
-
-<style lang="scss" scoped></style>
+<style scoped>
+.text {
+    color: v-bind(color);
+}
+</style>
+i

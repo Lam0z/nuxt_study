@@ -1,7 +1,7 @@
 <template>
     <header>
-        <nuxt-link to="/">Main page</nuxt-link>
-        <nuxt-link to="/about">About page</nuxt-link>
+        <NuxtLink to="/">Main page</NuxtLink>
+        <NuxtLink to="/about">About page</NuxtLink>
     </header>
 </template>
 

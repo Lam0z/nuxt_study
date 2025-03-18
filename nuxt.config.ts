@@ -7,6 +7,6 @@ export default defineNuxtConfig({
             apiBase: "/api",
         },
     },
-
+    css: ["~/assets/css/main.css", "bootstrap/dist/css/bootstrap.min.css"],
     compatibilityDate: "2025-03-18",
 });

@@ -1,0 +1,28 @@
+:root {
+    --main-color: orange;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "MR", sans-serif;
+}
+h1 {
+    font-size: 2rem;
+    color: var(--main-color);
+    @media (max-width: 520px) {
+        font-size: 3rem;
+    }
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+    margin-right: 1rem;
+    &:hover {
+        text-decoration: underline;
+    }
+}
