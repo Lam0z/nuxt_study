@@ -10,6 +10,11 @@
 
 <script setup>
 // import "~/assets/css/libs/first.css";
+useSeoMeta({
+    title: "About page",
+    description: "About page description",
+    keywords: "About, page, vue, nuxt",
+});
 </script>
 
 <style scoped>
