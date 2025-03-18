@@ -15,6 +15,9 @@ useSeoMeta({
     description: "About page description",
     keywords: "About, page, vue, nuxt",
 });
+// definePageMeta({
+//     layout: "orange",
+// });
 </script>
 
 <style scoped>

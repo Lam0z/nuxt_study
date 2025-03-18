@@ -1,7 +1,9 @@
 <script setup></script>
 <template>
-    <AppHeader />
-    <slot></slot>
+    <div>
+        <AppHeader />
+        <slot></slot>
+    </div>
 </template>
 
 <style lang="scss" scoped></style>

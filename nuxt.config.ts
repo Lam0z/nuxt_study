@@ -13,6 +13,11 @@ export default defineNuxtConfig({
             // viewport: "width=device-width, initial-scale=1",
             title: "Stydy NUxT",
         },
+        pageTransition: { name: "page", mode: "out-in" },
+        layoutTransition: {
+            name: "slide",
+            mode: "out-in", // по умолчанию
+        },
     },
     css: ["~/assets/css/main.css", "bootstrap/dist/css/bootstrap.min.css"],
     compatibilityDate: "2025-03-18",
