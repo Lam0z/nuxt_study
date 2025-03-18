@@ -12,6 +12,7 @@ const color = ref("orange");
         <h1 class="alert alert-success" :class="{ 'text-success': isActive }">
             Main page
         </h1>
+
         <h6
             class="text"
             :class="classObject"
