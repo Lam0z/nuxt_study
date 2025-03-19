@@ -6,6 +6,15 @@ const classObject = ref({
     "text-danger": false,
 });
 const color = ref("orange");
+
+async function getData() {
+    const res = await useFetch("https://jsonplaceholder.typicode.com/todos/1");
+    // const data = await res.json();
+    console.log(res);
+}
+onMounted(() => {
+    getData();
+});
 </script>
 <template>
     <div>
@@ -29,4 +38,3 @@ const color = ref("orange");
     color: v-bind(color);
 }
 </style>
-i
